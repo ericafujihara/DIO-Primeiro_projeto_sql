@@ -1,3 +1,5 @@
+## Primeiro projeto sql - Desafio DIO
+
 # Recuperando com SELECT Statement:
 # Recuperar as informações de todos os clientes
 SELECT * 
