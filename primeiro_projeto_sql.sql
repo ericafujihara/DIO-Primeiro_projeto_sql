@@ -1,6 +1,6 @@
 ## Primeiro projeto sql - Desafio DIO
 
-# Recuperando com SELECT Statement:
+# Recuperando dados com SELECT Statement:
 # Recuperar as informações de todos os clientes
 SELECT * 
 FROM cliente;
@@ -10,7 +10,7 @@ SELECT *
 FROM produto;
 
 
-# Criar filtros com where 
+# Utilizando where para aplicar filtros
 # Recuperando pedidos do cliente com id=001
 SELECT * 
 FROM pedido 
@@ -22,7 +22,7 @@ FROM produto
 WHERE preco > 20.00;
 
 
-# Recuperar o valor total de um pedido
+# Utilizando group by para recuperar o valor total de um pedido
 SELECT pedido_id, SUM(quantidade * preco) AS valor_total
 FROM item_pedido
 JOIN produto ON ItemPedido.produto_id = Produto.produto_id
